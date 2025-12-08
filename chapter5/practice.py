@@ -134,10 +134,10 @@ print(s)
 
 
 #can we have a set with 18(int) and 18(string) as a value in it
-s=set()
+"""s=set()
 s.add(18)
 s.add("18")
-print(s)#possible because both are differnt datatype
+print(s)"""#possible because both are differnt datatype
 
 
 #what will be the length of the following set s
@@ -155,12 +155,27 @@ s=set()
 print(s)""" #set type
 
 #create an empty dict, allow 4 friends to enter thier fvrt lang as value and keys as their names .assume that names are uniqu
-s={}
+"""s={}
 
 for i in range(4):
 
     name=input("enter the name ")
     lang=input("enter the fvrt lang ")
     s[name]=lang
-print(s)    
+print(s)  """  
 
+#or
+"""
+s={}
+
+for i in range(4):
+
+    name=input("enter the name ")
+    lang=input("enter the fvrt lang ")
+    s.update({name:lang})
+print(s) """
+
+#can you change the value inside a list which is contained in set S?
+"""s={8,7,12,"Harry",{1,2}}
+s.update()"""
+#not pssible because set is immutable
