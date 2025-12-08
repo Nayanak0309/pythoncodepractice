@@ -17,10 +17,19 @@ while(i<11):
     i +=1"""
 
 #4. Write a program to find whether a given number is prime or not. 
-n=int(input("enter the no "))
+"""n=int(input("enter the no "))
 for i in range(2,n):
     if(n%i)==0:
         print("number is not prime")
         break
 else:
-    print("its prime no")
+    print("its prime no")"""
+
+#Write a program to find the sum of first n natural numbers using while loop.
+n=int(input("enter the number"))
+i=1
+sum=0
+while(i<=n):
+    sum += i
+    i+=1
+print(sum)
